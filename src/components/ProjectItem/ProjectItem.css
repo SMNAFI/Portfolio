@@ -1,0 +1,8 @@
+.project-link{
+    text-decoration: none;
+    color: #8B8B8B;
+}
+
+.project-link:hover{
+    color: lightgray;
+}

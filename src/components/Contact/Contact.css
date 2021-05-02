@@ -1,0 +1,18 @@
+.contact-container{
+    padding: 10%;
+}
+
+.contact{
+    max-width: 750px;
+}
+
+.message{
+    background-color: #ffffff1c;
+    border: none;
+    color: lightgray;
+}
+
+.message:focus{
+    background-color: #ffffff1c;
+    color: lightgray;
+}
