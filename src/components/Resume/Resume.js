@@ -18,14 +18,14 @@ const Resume = () => {
             <Nav />
             <div className="resume-container">
                 <div>
-                    <h1 className="pb-4">About Me</h1>
+                    <h1 className="pb-4 glitch" data-text="About Me">About Me</h1>
                     <p>Hi! I am SM NAFI, a web designer/developer focused on crafting great web experiences. <br /> Designing and Coding have been my passion since the days I started working with computers <br /> but I found myself into web design/development since 2020.</p>
                     <p className="pb-2">I enjoy creating beautifully designed, intuitive and functional websites.</p>
                     <Link to="/smnafi.pdf" target="_blank" download className="btn btn-main">Get My Resume</Link>
                 </div>
 
                 <div className="pt-5 mt-5" style={{ maxWidth: "700px" }}>
-                    <h1 className="pb-4">Developer Skills</h1>
+                    <h1 className="pb-4 glitch" data-text="Developer Skills">Developer Skills</h1>
                     <div>
                         <h6>HTML5</h6>
                         <div>
@@ -51,6 +51,18 @@ const Resume = () => {
                         </div>
                     </div>
                     <div>
+                        <h6>Node JS</h6>
+                        <div>
+                            <Line percent="60" strokeWidth="1.5" trailWidth="1.5" strokeColor="#3e98c7" />
+                        </div>
+                    </div>
+                    <div>
+                        <h6>Express JS</h6>
+                        <div>
+                            <Line percent="65" strokeWidth="1.5" trailWidth="1.5" strokeColor="#3e98c7" />
+                        </div>
+                    </div>
+                    <div>
                         <h6>MongoDB</h6>
                         <div>
                             <Line percent="75" strokeWidth="1.5" trailWidth="1.5" strokeColor="#3e98c7" trailColor="lightgray" />
@@ -65,7 +77,7 @@ const Resume = () => {
                 </div>
 
                 <div className="pt-5 mt-5">
-                    <h1 className="pb-4">Coding Skills</h1>
+                    <h1 className="pb-4 glitch" data-text="Coding Skills">Coding Skills</h1>
                     <div className="row">
                         <div className="col-md-3">
                             <div>
@@ -125,7 +137,7 @@ const Resume = () => {
                 </div>
 
                 <div className="pt-5 pb-3 mt-5">
-                    <h1 className="pb-4">Knowledge</h1>
+                    <h1 className="pb-4 glitch" data-text="Knowledge">Knowledge</h1>
                     <div className="row">
                         <div className="col-md-6">
                             <div className="p-3">
@@ -159,8 +171,8 @@ const Resume = () => {
                 </div>
 
                 <div className="pt-5 mt-5">
-                    <h1 className="pb-4">Education</h1>
-                    <small><i>2019 - present</i></small>
+                    <h1 className="pb-4 glitch" data-text="Education">Education</h1>
+                    <p><small><i>2019 - present</i></small></p>
                     <h5>B.Sc in Computer Science</h5>
                     <p> - Mymensing Engineering College</p>
                 </div>
