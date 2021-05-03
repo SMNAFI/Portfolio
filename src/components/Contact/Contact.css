@@ -1,5 +1,5 @@
 .contact-container{
-    padding: 10%;
+    padding: 10% 10% 0 10%;
 }
 
 .contact{
@@ -15,4 +15,15 @@
 .message:focus{
     background-color: #ffffff1c;
     color: lightgray;
+}
+
+.footer-icon svg{
+    font-size: 25px;
+    /* color: #8B8B8B; */
+    color: lightgray;
+    margin: 0px 8px;
+}
+
+.footer-icon svg:hover{
+    color: white;
 }

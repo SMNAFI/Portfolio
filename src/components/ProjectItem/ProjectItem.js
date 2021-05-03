@@ -1,5 +1,8 @@
 import React from 'react';
 import { Carousel } from '3d-react-carousal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons'
 import './ProjectItem.css';
 
 const ProjectItem = ({ data }) => {
@@ -15,8 +18,12 @@ const ProjectItem = ({ data }) => {
                     <div className="col-lg-6">
                         <h3>{title}</h3>
                         <p>{description}</p>
-                        <a href={github} target="_blank" rel="noopener noreferrer" className="project-link">Github </a>
-                        <a href={live} target="_blank" rel="noopener noreferrer" className="project-link"> Live</a>
+                        <a href={github} target="_blank" rel="noopener noreferrer" className="project-link">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a href={live} target="_blank" rel="noopener noreferrer" className="project-link">
+                            <FontAwesomeIcon icon={faLink} />
+                        </a>
                     </div>
                     <div className="col-lg-6 py-3">
                         <Carousel slides={slides} autoplay={true} interval={5000} />
@@ -31,8 +38,12 @@ const ProjectItem = ({ data }) => {
                     <div className="col-lg-6">
                         <h3>{title}</h3>
                         <p>{description}</p>
-                        <a href={github} target="_blank" rel="noopener noreferrer" className="project-link">Github</a>
-                        <a href={live} target="_blank" rel="noopener noreferrer" className="project-link"> Live</a>
+                        <a href={github} target="_blank" rel="noopener noreferrer" className="project-link">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a href={live} target="_blank" rel="noopener noreferrer" className="project-link">
+                            <FontAwesomeIcon icon={faLink} />
+                        </a>
                     </div>
                 </>
             }

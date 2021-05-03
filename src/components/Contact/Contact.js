@@ -2,6 +2,8 @@ import React from 'react';
 import Nav from '../Nav/Nav';
 import { useState } from 'react';
 import { send } from 'emailjs-com';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import './Contact.css';
 
 const Contact = () => {
@@ -32,13 +34,12 @@ const Contact = () => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
     };
     return (
-        <div className="container-dark vh-100">
+        <div className="container-dark" style={{ minHeight: "100vh" }}>
             <Nav />
             <div className="contact-container">
                 <div className="contact mx-auto">
-                    {/* <h1 className="text-center mb-3">Contact</h1> */}
                     <div className="text-center pb-4">
-                        <h1 className="glitch" data-text="Contact">Contact</h1>
+                        <h1 className="glitch" data-text="Contact Me">Contact Me</h1>
                     </div>
                     <p className="text-center text-secondary">Feel free to drop me a line! I would get back to you within 24 hours.</p>
                     <form onSubmit={onSubmit}>
@@ -81,6 +82,20 @@ const Contact = () => {
                         <button type='submit' className="btn-main">Submit</button>
                     </form>
                 </div>
+            </div>
+            <div className="text-center footer-icon pt-5 mt-5 pb-3">
+                <a href="https://github.com/SMNAFI" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a href="https://www.linkedin.com/in/sayem md nafi 7781a6201/" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100012316758149" target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faFacebook} />
+                </a>
+                {/* <a href="//sayem.md.nafi@gmail.com" target="_blank">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                </a> */}
             </div>
         </div>
     );

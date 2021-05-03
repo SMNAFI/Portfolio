@@ -8,13 +8,12 @@ const Home = () => {
     return (
         <div className="container-dark vh-100">
             <Nav />
-            <div className="d-flex justify-content-center align-items-center h-75">
+            <div className="d-flex justify-content-center align-items-center h-75 px-5">
                 <div>
-                    {/* <h1 className="glitch">HI, THIS IS SM NAFI.</h1> */}
-                        <h1 className="text-center glitch mt-5 h1" data-text="HI, THIS IS SM NAFI." style={{letterSpacing: "0.1em"}}>HI, THIS IS SM NAFI.</h1>
+                    <h1 className="glitch mt-5 h1" data-text="HI, THIS IS SM NAFI." style={{ letterSpacing: "0.1em" }}>HI, THIS IS SM NAFI.</h1>
                     <h2 className="pb-2">I'm a {" "}
                         <Typical
-                            steps={['Developer', 1500, 'Programmer', 1500, 'Dreamer', 1500, 'Optimistic', 1500, 'Determined', 1500]}
+                            steps={['Developer', 2000, 'Programmer', 2000, 'Dreamer', 2000]}
                             loop={Infinity}
                             wrapper="b"
                         />

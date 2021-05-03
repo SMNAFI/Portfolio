@@ -4,5 +4,10 @@
 }
 
 .project-link:hover{
-    color: lightgray;
+    color: white;
+}
+
+.project-link svg{
+    font-size: 20px;
+    margin-right: 10px;
 }

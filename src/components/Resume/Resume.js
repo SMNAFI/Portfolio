@@ -9,6 +9,8 @@ import design from '../../images/design.png';
 import database from '../../images/databases.png';
 import programming from '../../images/programming.png';
 import web from '../../images/web.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const Resume = () => {
     return (
@@ -161,6 +163,18 @@ const Resume = () => {
                     <small><i>2019 - present</i></small>
                     <h5>B.Sc in Computer Science</h5>
                     <p> - Mymensing Engineering College</p>
+                </div>
+
+                <div className="text-center footer-icon pt-5 mt-5 pb-5">
+                    <a href="https://github.com/SMNAFI" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/sayem md nafi 7781a6201/" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} />
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100012316758149" target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faFacebook} />
+                    </a>
                 </div>
             </div>
         </div>
